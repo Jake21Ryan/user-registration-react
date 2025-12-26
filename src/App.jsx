@@ -1,15 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Register from "./components/Register";
 import SubmitData from "./components/SubmitData";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
-        <Route path="/display-data" element={<DisplayData />} />
+        <Route path="/" element={<Register />} />
         <Route path="/submit-data" element={<SubmitData />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
